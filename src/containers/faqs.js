@@ -17,6 +17,11 @@ export function FaqsContainer() {
       <OptForm>
         <OptForm.Input placeholder="Email address" />
         <OptForm.Button>Try now</OptForm.Button>
+        <OptForm.Break />
+        <OptForm.Text>
+          Ready to watch your favourite shows? Enter your email to create or
+          resubcribe to Netflix!
+        </OptForm.Text>
       </OptForm>
     </Accordion>
   );
