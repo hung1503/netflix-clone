@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { FirebaseContext } from "../context/firebase";
 import { FooterContainer } from "../containers/footer";
 import { HeaderContainer } from "../containers/header";
@@ -7,7 +7,7 @@ import { Form } from "../components";
 import * as ROUTES from "../constants/routes";
 
 export default function Signup() {
-  const navigate = useNavigate();
+  const navigate = useHistory();
   const { firebase } = useContext(FirebaseContext);
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
