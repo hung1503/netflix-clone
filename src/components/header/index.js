@@ -40,7 +40,7 @@ Header.Text = function HeaderText({ children, ...restProps }) {
 };
 
 Header.TextLink = function HeaderTextLink({ children, ...restProps }) {
-  return <Link>{children}</Link>;
+  return <Link {...restProps}>{children}</Link>;
 };
 
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
